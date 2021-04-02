@@ -1,0 +1,25 @@
+{
+  "testCenters": [
+    {
+      "name": "wqdeqw",
+      "Email": "xas",
+      "Address": "s",
+      "Phone": "qdqw",
+      "Description": "sA"
+    },
+    {
+      "name": "Hospital",
+      "Email": "qweqw",
+      "Address": "via roma 12,milan",
+      "Phone": "asfw",
+      "Description": "efad"
+    },
+    {
+      "name": "Ospedale Civile di brescia",
+      "Email": "wenduka@gmail.com",
+      "Address": "via antonio schivardi 120,brescia",
+      "Phone": "3292490458",
+      "Description": "It is a general hospital."
+    }
+  ]
+}

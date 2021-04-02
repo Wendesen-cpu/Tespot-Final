@@ -1,0 +1,53 @@
+nav{
+    height:100px;
+    background-color: #52C6A3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    margin: 10px;
+}
+.menu6 {
+    width:60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 350px;
+}
+.menu6 a{
+    text-decoration: none;
+    color:#2d3436;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#h2-6{
+    text-align: center;
+}
+.main-paragraph6 {
+    font-size: medium;
+    font-family: sans-serif;
+    border: 1px rgb(216, 214, 214) solid;
+    height: 60vh;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

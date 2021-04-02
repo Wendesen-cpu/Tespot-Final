@@ -1,0 +1,79 @@
+nav{
+    height:100px;
+    background-color: #52C6A3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    margin: 10px;
+}
+.menu5{
+    width:60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 350px;
+}
+.menu5 a{
+    text-decoration: none;
+    color:#2d3436;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-container{
+    display: flex;
+    border: 1px rgb(194, 186, 186) solid;
+    height: 60vh;
+    flex-basis: 45%;
+    align-items: center;
+    background-color: rgb(221, 220, 215);  
+    margin: 10px 10px;
+    font-size: medium;
+    font-family: sans-serif;
+}
+.form-flex{
+    flex: 2;
+}
+.thanks-pic{
+   flex: 2;
+    border: 1px rgb(199, 198, 198) solid;
+    height: 60vh;  
+}
+.form-pic{
+    width: 800px;
+    height: 400px;  
+}
+.my-forms5 {
+    font-size: medium;
+    font-family: sans-serif;
+    padding-left: 5px;
+}
+.submit-btn5 {
+    background-color: rgb(150, 36, 243);
+    color: rgb(255, 255, 255);
+    font-size: large;
+    padding-left: 5px;
+    border-radius: 5px;
+    width: 20%;
+}
+.form-group{
+    background-color: rgb(150, 36, 243);
+    border: 1px blanchedalmond solid;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: sans-serif;
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+}
+.paragraph-5 {
+    font-size: large;
+    padding-left: 10px;
+    font-size: medium;
+    font-family: sans-serif;
+}
