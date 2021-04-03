@@ -1,56 +1,93 @@
-nav{
-    height:100px;
-    background-color: #52C6A3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  height: 100px;
+  background-color: #52c6a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-    width: 30%;
-    margin: 10px;
+.logo {
+  width: 30%;
+  margin: 10px;
 }
 #covid-19:hover{
     background-color: red;
 }
 .menu6 {
-    width:60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.logo img{
-    width: 350px;
+.logo img {
+  width: 350px;
 }
-.menu6 a{
-    text-decoration: none;
-    color:#2d3436;
-    text-transform: uppercase;
-    font-weight: bold;
+.menu6 a {
+  text-decoration: none;
+  color: #2d3436;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-#h2-6{
-    text-align: center;
+#h2-6 {
+  text-align: center;
 }
 .main-paragraph6 {
-    font-size: medium;
-    font-family: sans-serif;
-    border: 1px rgb(216, 214, 214) solid;
-    height: 60vh;
-    padding-top: 10px;
-    padding-left: 10px;
+  font-size: medium;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  /*border: 1px rgb(216, 214, 214) solid;*/
+  height: 20%;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
+.profile-card {
+  display: flex;
+  gap: 1em;
+  margin-top: 5%;
+}
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: sans-serif;
+}
 
+.title {
+  color: grey;
+  font-size: 18px;
+}
 
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
 
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
 
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
 
-
-
-
-
-
-
-
-
-
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+  }
+  .profile-card {
+    display: grid;
+  }
+}

@@ -1,40 +1,29 @@
-#cat-1{
-    width: 600px;
-  }
-#intro-1{
-  margin-left: 400px;
+#cat-1 {
+  width: 600px;
+}
+.req-containers div {
+  display: flex;
+}
+#intro-1 {
+  background-color: red;
+  color: white;
+  font-family: sans-serif;
   height: 400px;
   width: 400px;
   border: solid bisque 2px;
-  margin-top: 25px;
+  margin-top: 5px;
   padding: 4px;
 }
 .btn3 button {
-    bottom: 0px;
-    text-align: center;
-    padding: 10px;
-    background-color: green;
-    margin-top: 10px;
-    color: white;
-    border-radius: 4px;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
 }
-div h3{
+div h3 {
   color: rebeccapurple;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
