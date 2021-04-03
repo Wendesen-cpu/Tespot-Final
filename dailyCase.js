@@ -43,7 +43,12 @@ function covidUpdate(country, region) {
               document.getElementById("tempo").innerHTML = "";
               if (x === 0) {
                 const title = document.createElement("h3");
-                title.innerHTML = `Today's Covid-19 Status for the region of ${region}`;
+                if (region !== "") {
+                  title.innerHTML = `Today's Covid-19 Status for the region of ${region}`;
+                } else {
+                  title.innerHTML = `Today's Covid-19 Status for the country ${country}`;
+                }
+                
                 document.getElementById("tempo").appendChild(title);
               }
               const holder = document.createElement("ul");
