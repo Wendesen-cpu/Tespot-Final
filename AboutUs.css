@@ -9,6 +9,9 @@ nav {
   width: 30%;
   margin: 10px;
 }
+#covid-19:hover{
+    background-color: red;
+}
 .menu6 {
   width: 60%;
   display: flex;

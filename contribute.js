@@ -15,11 +15,11 @@ document.getElementById("contribute-btn").addEventListener("click", () => {
   console.log(testCenterDescriptions);
   console.log(testCenterName);
   const testCenter = {
-    name: testCenterName,
-    Email: testCenterEmail,
-    Address: testCenterAddress,
-    Phone: testCenterPhoneNumber,
-    Description: testCenterDescriptions,
+    "name": testCenterName,
+    "Email": testCenterEmail,
+    "Address": testCenterAddress,
+    "Phone": testCenterPhoneNumber,
+    "Description": testCenterDescriptions,
   };
 
   const json = JSON.stringify(testCenter);
