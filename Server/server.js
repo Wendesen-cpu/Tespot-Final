@@ -18,12 +18,8 @@ const a = new FileSync('testCenter.json')
 const testCenter = low(a);
 
 
-testCenter.defaults({ testCenters: [] })
+testCenter.defaults({ testCenters: [], travelDocs:[]})
  .write()
-
-
-
-
 
 // Remove a testcenter
 app.delete('/testcenters', (req, res) => {
@@ -32,11 +28,6 @@ app.delete('/testcenters', (req, res) => {
     .write();
   res.send('deleted!')
 })
-  
-
-
-
-
 
   app.post('/testcenters', (req, res) => {
     testCenter.get('testCenters')
@@ -55,4 +46,34 @@ app.delete('/testcenters', (req, res) => {
      const x = data.filter({"name": req.params.id})
       res.send(x)
     })
+
+
+//Travel Docs Config
+
+// app.delete('/travelDocs', (req, res) => {
+//   testCenter.get('testCenters')
+//     .remove()
+//     .write();
+//   res.send('deleted!')
+// })
+
+  app.post('/travelDocs', (req, res) => {
+    testCenter.get('travelDocs')
+      .push(req.body)
+      .write()
+    res.send('Test Center Added') //sending back a response
+   })
+
+   app.get('/travelDocs', (req, res) => {
+    const data = testCenter.get('travelDocs') //we are reading the users
+    res.send(data)
+   })
+
+//    app.get('/travelDocs:id', (req, res) => {
+//     const data = testCenter.get('testCenters')
+//      const x = data.filter({"name": req.params.id})
+//       res.send(x)
+//     })
+
+
 
