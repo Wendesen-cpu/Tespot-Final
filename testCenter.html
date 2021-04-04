@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <title>test-centers</title>
     
 </head>
@@ -34,7 +32,9 @@
                     <input type="text"  id="city" value ="" class="form-input"> 
                 </div> 
                 <label for="checkbox">If you are interested with centers near to you only, then tick the check box!</label>
-                <input type="checkbox" name="" id="important2">
+                <div id="preference">
+                    <input type="checkbox" name="" id="important2">
+                </div>
                 <button type="submit"  id ="important" class="form-btn">Search</button>
             
                     <div id="res">
@@ -44,6 +44,8 @@
 
              
      <script src="Search-testCenter.js"></script>
+     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 
         
     </div>
