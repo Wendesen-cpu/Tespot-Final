@@ -7,46 +7,33 @@
     <link rel="stylesheet" href="styles.css">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>test-centers</title>
     
 </head>
 <body>
     <nav>
         <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="images"></a>
+            <a href="/index.html"><img src="/images/logo.png" alt="images"></a>
         </div>
         <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="travel.html">Travel</a>
-        <a href="contribute.html">Contribute</a>
-        <a href="testCenter.html">Test Center</a>
-        <a href="covid-Dailycase.html">Covid-19 Alert</a>
+        <a href="/index.html">Home</a>
+        <a href="covid-Dailycase.html" style="right: 10;">Covid-19 Alert</a>
+
     </div>
     </nav>
     
-
-    <!--The Api of the mapbox-->
-    <!-- <div class="recommeded-test-centers"> -->
-        <!-- <div id='map' style='width: 400px; height: 400px;margin: 10px;'></div> -->
-        <!-- <div class="test-centers-details">
-            <h2>Recommended Test Ceters</h2>
-            <p>Adress:Brescia, via Rodi 49</p>
-            
-        </div>
-        <div style=" display:flex; margin-top: 100px; width: 100%; height: 60vh;"> -->
             <div class="testcenter">
-                <h3>Please Provide State and City</h3>
+                <h3>Please Provide Region/State and City</h3>
                 
                    <div>  
-                    <label class="form-label">State</label>
+                    <label class="form-label">Region/State</label>
                     <input type="text"  id="state" value ="" class="form-input"> 
                 </div>
                 <div>
                     <label  class="form-label">City</label>
                     <input type="text"  id="city" value ="" class="form-input"> 
                 </div> 
-                <label for="checkbox">Nearby Me</label>
+                <label for="checkbox">If you are interested with centers near to you only, then tick the check box!</label>
                 <input type="checkbox" name="" id="important2">
                 <button type="submit"  id ="important" class="form-btn">Search</button>
             
