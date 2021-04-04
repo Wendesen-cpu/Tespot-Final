@@ -22,10 +22,11 @@
       "Description": "It is a general hospital."
     }
   ],
-
   "travelDocs": [
     {
-    "summary": "A negative <b> PCR test certificate must be presented on departure"
-  }
-  ]
+      "summary": "A negative <b> PCR test certificate must be presented on departure"
+    }
+  ],
+  "source": "db.json",
+  "defaultValue": {}
 }
