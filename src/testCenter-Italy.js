@@ -26,11 +26,9 @@ window.onload = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const citty = urlParams.get("city");
   const newRegion = urlParams.get("region");
-  const maxDistance = urlParams.get("maxDistance");
   console.log(`region: ${newRegion}`);
   const status = urlParams.get("state");
   console.log(urlParams.get('state'));
-  console.log(urlParams.get('maxDistance'));
   console.log(`Status: ${status}`);
 
   console.log(citty);
@@ -87,26 +85,21 @@ window.onload = async () => {
               dist = distanceCalc(formatter(latt), formatter(lngg), currentLat, currentLng);
 
               const holder = document.createElement("ul");
-              const holder2 = document.createElement("ul");
               const element1 = document.createElement("li");
               const element2 = document.createElement("li");
               const element3 = document.createElement("li");
               const element4 = document.createElement("li");
-              console.log(status);
-
-              if (status == 1) {
-                console.log(status == 1);
-                if (dist < maxDistance) {
-                  console.log("yes, it is small")
+              console.log(typeof status);
+              if (status === 1) {
+                if (dist < 90) {
                   if (x === 0) {
                     const title = document.createElement("p");
-                    title.innerHTML = `The following Covid-19 test centers are near to you in the city of ${citty}:`;
+                    title.innerHTML = `you have the following Covid test centers near to you in the city of ${citty}:`;
                     document.getElementById("result").appendChild(title);
-                    
                     x += 1;
                   }
                   console.log('yes');
-                  const name = document.createElement("h4");
+                  const name = document.createElement("h2");
                   name.innerHTML = element.name;
                   element1.innerHTML = `It is located at : ${element.Address} `;
                   console.log('you are at location:');
@@ -123,31 +116,19 @@ window.onload = async () => {
                   console.log(`${dist} km`);
                   element4.innerHTML = `The distance between you and the center is : ${dist.toPrecision(5)} km`;
                   holder.appendChild(name);
-                  holder2.appendChild(element1);
-                  holder2.appendChild(element4);
-                  holder2.appendChild(element2);
-                  holder.appendChild(holder2);
-                  holder2.setAttribute("style", "margin-left:20px")
-                  holder.setAttribute("style", "margin-top:20px");
-                  // holder.setAttribute("style", "margin-left:50px");
+                  holder.appendChild(element1);
+                  holder.appendChild(element4);
+                  holder.appendChild(element2);
                   document.getElementById("result").appendChild(holder);
                   // console.log(formatter(latt));
                   // console.log(formatter(lngg));
-                } else if (x === 0) {
+                } else {
                   console.log("No nearbt Test Centers");
-                  console.log(`max dis: ${maxDistance}`)
-                  const err = document.createElement("p");
-                  err.innerHTML = "We're really sorry!";
-                  const errorr = document.createElement("p");
-                  errorr.innerHTML = `We couldn't find a test center within this distance!:`;
-                  document.getElementById("result").appendChild(err);
-                  document.getElementById("result").appendChild(errorr);
-                  x += 1;
                 }
-              } else if (status == 0) {
+              } else {
                 if (x === 0) {
                   const title = document.createElement("p");
-                  title.innerHTML = `The following Covid-19 test centers are available in the city of ${citty}:`;
+                  title.innerHTML = `you have the following Covid test centers in the city of ${citty}:`;
                   document.getElementById("result").appendChild(title);
                   x += 1;
                 }
