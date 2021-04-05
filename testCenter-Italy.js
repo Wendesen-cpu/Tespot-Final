@@ -61,6 +61,10 @@ window.onload = async () => {
     d = R * c;
     return d;
   }
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
   /* eslint-disable no-var */
   // const city = "brescia";
   const listOfAddress = [];
@@ -71,7 +75,12 @@ window.onload = async () => {
     .then((data) => {
       data.forEach((element) => {
         const tempo = element.Address;
-        const city = tempo.split(",")[1];
+        let city = tempo.split(",")[1];
+        if (city !== undefined) {
+          city = city.trim();
+          city = capitalizeFirstLetter(city);
+        }
+        console.log(city);
         const addr = tempo.split(",")[0];
         if (city === citty) {
           document.getElementById("result").innerHTML = "";
@@ -176,9 +185,7 @@ window.onload = async () => {
                 // console.log(formatter(lngg));
                 // console.log(formatter(latt));
                 // console.log(formatter(lngg))
-
               }
-
             });
         }
       });

@@ -31,9 +31,7 @@ nav {
   text-align: center;
 }
 .main-paragraph6 {
-  font-family: 'sans-serif';
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+ 
   margin-left: 10px;
   /*border: 1px rgb(216, 214, 214) solid;*/
   height: 20%;
@@ -43,7 +41,9 @@ nav {
 }
 
 .profile-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1em;
   margin-top: 5%;
 }
