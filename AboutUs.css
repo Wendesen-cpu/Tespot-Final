@@ -31,14 +31,15 @@ nav {
   text-align: center;
 }
 .main-paragraph6 {
-  font-size: medium;
-  font-family: sans-serif;
-  font-size: 1.1rem;
+  font-family: 'sans-serif';
+  font-size: 0.9rem;
+  letter-spacing: 1px;
   margin-left: 10px;
   /*border: 1px rgb(216, 214, 214) solid;*/
   height: 20%;
   padding-top: 10px;
   padding-left: 10px;
+  width: 80%;
 }
 
 .profile-card {
@@ -74,7 +75,7 @@ button {
 
 a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 1rem;
   color: black;
 }
 
