@@ -587,12 +587,60 @@
       "Address": "via venezia 40,brescia",
       "Phone": "32456769856",
       "Description": "wqrqw"
+    },
+    {
+      "name": "",
+      "Email": "",
+      "Address": "",
+      "Phone": "",
+      "Description": ""
+    },
+    {
+      "name": "Saronno Hospital",
+      "Email": "marham.ayat@gmail.com",
+      "Address": "Via trieste 981",
+      "Phone": "+393203343313",
+      "Description": "test center "
+    },
+    {
+      "name": "Auxologico Ariosto",
+      "Email": "convenzioni-mi@auxologico.it",
+      "Address": "Punto Prelievo Via Ariosto 13",
+      "Phone": "",
+      "Description": ""
+    },
+    {
+      "name": "AUXOLOGICO ARIOSTO",
+      "Email": "convenzioni-mi@auxologico.it",
+      "Address": "Via Ariosto 13, Milano",
+      "Phone": "02 619111",
+      "Description": ""
+    },
+    {
+      "name": "AUXOLOGICO MOSÈ BIANCHI",
+      "Email": "convenzioni-mi@auxologico.it .",
+      "Address": "Via Mosé Bianchi 90, Milan",
+      "Phone": "02 61911 2501",
+      "Description": ""
+    },
+    {
+      "name": "AUXOLOGICO PROCACCINI",
+      "Email": "convenzioni-mi@auxologico.it",
+      "Address": "Via Niccolini 39 at the corner with Via Procaccini  20154,milan",
+      "Phone": "02 619111",
+      "Description": ""
+    },
+    {
+      "name": "AUXOLOGICO PIER LOMBARDO",
+      "Email": "convenzioni-mi@auxologico.it",
+      "Address": "Via Pier Lombardo 22,milan",
+      "Phone": "02 6191 12501",
+      "Description": "Centre for Covid-19 test"
     }
   ],
   "travelDocs": [
     {
       "summary": "A negative <b> PCR test certificate must be presented on departure"
-
     },
     {
       "name": "Fithawi"
@@ -619,5 +667,4 @@
       "name": "Fithawi"
     }
   ]
-
 }
