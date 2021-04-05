@@ -587,12 +587,32 @@
       "Address": "via venezia 40,brescia",
       "Phone": "32456769856",
       "Description": "wqrqw"
+    },
+    {
+      "name": "Black Lion Hospital",
+      "Email": "w.belay@studenti.unibs.it",
+      "Address": "Via Addis Ababa,Addis Ababa",
+      "Phone": "32930535",
+      "Description": "It is a hospital"
+    },
+    {
+      "name": "Ospedale Francesco della Brescia",
+      "Email": "w.belay@studenti.unibs.it",
+      "Address": "via venezia 45, brescia",
+      "Phone": "3245678903",
+      "Description": "It is a Hospital."
+    },
+    {
+      "name": "",
+      "Email": "",
+      "Address": "",
+      "Phone": "",
+      "Description": ""
     }
   ],
   "travelDocs": [
     {
       "summary": "A negative <b> PCR test certificate must be presented on departure"
-
     },
     {
       "name": "Fithawi"
@@ -619,5 +639,4 @@
       "name": "Fithawi"
     }
   ]
-
 }
