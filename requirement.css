@@ -1,11 +1,13 @@
 #intro-1 {
- 
-  width: 800px;
+  width: 900px;
   padding-top: 4px;
   font-family: sans-serif;
   margin-top: 50px;
-  margin-left: 150px;
+  margin-left: 100px;
   padding: 4px;
+}
+
+#remDiv {
 }
 .btn3 button {
   position: fixed;
