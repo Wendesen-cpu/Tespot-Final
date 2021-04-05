@@ -592,6 +592,7 @@
   "travelDocs": [
     {
       "summary": "A negative <b> PCR test certificate must be presented on departure"
+
     },
     {
       "name": "Fithawi"
@@ -618,4 +619,5 @@
       "name": "Fithawi"
     }
   ]
+
 }
